@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" name=viewport" content="width=device-width, initial-scale=1">
+    <title>Weer website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/mainpage.css">
+    <link rel="stylesheet" media="screen" href="assets/css/form.css">
+    <script type="text/ecmascript" src="assets/js/weather.js"></script>
+</head>
+<body>
+<header>
+    <h1>Wat wordt het weer vandaag <span class="name2"></span></h1>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+</nav>
+<main>
+    <!-- In dit stuk komt het weerbericht -->
+    <img/>
+    <img class="temp-img"/>
+    <h1 class="temp"></h1>
+
+    <h1 class="temp-api"></h1>
+
+</main>
+<aside>
+    <div class="weather_form">
+        <ul>
+            <li>
+                <h2>Het weer voor <span class="name"></span></h2>
+            </li>
+            <li>
+                <label for="CityName">Plaats</label>
+                <input type="text" name="CityName" id="CityName" placeholder="Geef een plaats op"/>
+            </li>
+            <li>
+                <label for="CityTemp">Temperatuur</label>
+                <input type="text" name="CityTemp" id="CityTemp" placeholder="Wat is de temperatuur daar?"/>
+            </li>
+            <li>
+                <label for="WeatherType">Type weer</label>
+                <select name="WeatherType" id="WeatherType">
+                    <option value="zonnig" id="zonnig">Zonnig</option>
+                    <option value="bewolkt" id="bewolkt">Bewolkt</option>
+                    <option value="regen">Regen</option>
+                    <option value="sneeuw">Sneeuw</option>
+                </select>
+            </li>
+            <li>
+                <button type="button"  class="updateWebsite">Update website via formulier</button>
+            </li>
+            <li>
+                <button type="button" id="myBtn" class="UpdateViaapi">Update website via API</button>
+            </li>
+        </ul>
+    </div>
+</aside>
+<footer>Deze website is gemaakt door</footer>
+</body>
+</html>
